@@ -1,0 +1,44 @@
+.header {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 15px 110px;
+    box-shadow: 0px 5px 5px rgb(235, 235, 235);
+    position: sticky;
+}
+
+.linksHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoHeader {
+    width: 200px;
+}
+
+.logoHeader > a >img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.restLinkHeader {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.restLinkHeader > a{
+    text-decoration: none;
+    color: black;
+    width: 150px;
+    height: 100%;
+    text-align: center;
+}
+
+.restLinkHeader > a:hover{
+    color: var(--blueColor);
+    transition: all .3s;
+}
+
+
