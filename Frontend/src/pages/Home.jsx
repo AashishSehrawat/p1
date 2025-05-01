@@ -114,12 +114,12 @@ const Home = () => {
 
       {/* about section */}
       <div ref={aboutRef} className="aboutSection">
-
+        <div className="container"></div>
       </div>
 
       {/* conatct section */ }
       <div ref={contactRef} className="contactSection">
-        
+        <div className="container"></div>
       </div>
       <Footer />
     </div>
