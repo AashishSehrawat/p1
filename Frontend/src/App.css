@@ -3,6 +3,7 @@
 
 @import "./styles/header.css";
 @import "./styles//home.css";
+@import "./styles/components.css";
 
 :root {
   --blueColor: #0094ff;
@@ -38,7 +39,7 @@ h2 {
 
 /* button css */
 .button {
-  width: 240px;
+  width: 200px;
   background-color: var(--blueColor);
   color: white;
   font-size: 1.1rem;
@@ -47,6 +48,8 @@ h2 {
   cursor: pointer;
   transition: all .3s;
   border: none;
+  text-decoration: none;
+  text-align: center;
 }
 
 .button:hover {

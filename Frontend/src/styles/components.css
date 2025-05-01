@@ -1,0 +1,36 @@
+/* service card css */
+.serviceCard {
+    max-width: 26.6%;
+    padding: 0 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.serviceCardImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceCardImg > img {
+    width: 100px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.serviceCardContent{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+}
+
+.serviceCardContent > h3 {
+    font-size: 1.2rem;
+}
+
+.serviceCardContent > p {
+    text-align: center;
+}

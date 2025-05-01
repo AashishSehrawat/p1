@@ -1,6 +1,7 @@
 /* main section */
 .mainSection{
-    padding: 60px 0px;
+    padding: 30px 0px 60px 0px;
+    background-color: #EEF3FA;
 }
 
 .blocksMain{
@@ -37,4 +38,66 @@
   height: 100%; 
   object-fit: contain; 
   object-position: center; 
+}
+
+
+/* boost seciton */
+.boostSection {
+    padding: 60px 0px;
+}
+
+.boostBlocks {
+    display: flex;
+    width: 100%;
+    gap: 5rem;
+}
+
+.boostImgBlock {
+    width: 50%;
+}
+
+.boostImgBlock > img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.boostContentBlock {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.boostContentPointers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.boostContentPointers > div {
+    display: flex;
+    gap: .5rem;
+}
+
+.boostContentPointers > div > img {
+    width: 22px;
+}
+
+
+/* service section */
+.serviceSection {
+    padding: 60px 0 20px 0;
+    background-color: #eef3fa;
+}
+
+.serviceSection h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.serviceCardsBlock{
+    display: flex;
+    flex-wrap: wrap;
 }
