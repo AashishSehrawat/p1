@@ -4,6 +4,8 @@ import boostImg from '../assets/boostImg.webp';
 import check from "../assets/check.svg";
 import ai from "../assets/serviceSvg/aiSupport.webp";
 import person from "../assets/testimonial/4.png";
+import aboutUs from "../assets/aboutUs.webp";
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -183,12 +185,35 @@ const Home = () => {
 
       {/* about section */}
       <div ref={aboutRef} className="aboutSection">
-        <div className="container"></div>
+        <div className="container">
+          <div className="aboutBlocks">
+            <div className="aboutContentBlock">
+              <div>
+              <h2>About Us</h2>
+              <h4>About CareerSathi – Your Career Compass</h4>
+              <p>CareerSathi is revolutionizing career guidance for India’s students. We cut through the confusion with personalized, AI-powered advice combined with human expertise. Our mission is simple: help students in classes 8-12 discover their perfect career path with confidence.</p>
+              <p>We make career decisions easier with psychometric tests, expert mentorship, and up-to-date industry insights. Whether you're exploring STEM, arts, or unconventional careers, we provide the clarity you need to shape your future. CareerSathi isn’t just guidance – it’s your roadmap to success.</p>
+              <Link to="/aboutUs" className="button">Know more</Link>
+              </div>
+             
+            </div>
+            <div className="aboutImgBlock">
+              <img src={aboutUs} alt="About Us" />
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* conatct section */ }
       <div ref={contactRef} className="contactSection">
-        <div className="container"></div>
+        <div className="container">
+          <div className="contactBlocks">
+            <div className="contactHeadingBlock">Reach Us</div>
+            <div className="contactContentBlock">
+              
+            </div>
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
