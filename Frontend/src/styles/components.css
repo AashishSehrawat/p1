@@ -34,3 +34,61 @@
 .serviceCardContent > p {
     text-align: center;
 }
+
+
+/* testimonial card css */
+.testimonialCard {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.testiStars {
+    display: flex;
+}
+
+.testiStars > img {
+    width: 22px;
+}
+
+.testiUserDetail {
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+}
+
+.testiUserDetail > img {
+    width: 60px;
+} 
+
+.testiUserName {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+/* next and prev arrow css */
+.testiNextArrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 115px;
+    cursor: pointer;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    transition: all .3s;
+}
+
+.testiNextArrow:hover{
+    background-color: black;
+}
+
+.testiNextArrow > img{
+    width: 15px;
+    object-fit: contain;
+    object-position: center;
+}

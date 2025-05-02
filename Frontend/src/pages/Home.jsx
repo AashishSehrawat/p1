@@ -3,10 +3,18 @@ import mainImage from "../assets/mainSideImage.webp";
 import boostImg from '../assets/boostImg.webp';
 import check from "../assets/check.svg";
 import ai from "../assets/serviceSvg/aiSupport.webp";
+import person from "../assets/testimonial/4.png";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import { Link } from "react-router-dom";
+import { TestimonialNextArrows, TestimonialPrevArrows } from "../components/TestimonialArrows.jsx";
+
 const Header = lazy(() => import("../components/Header.jsx"));
 const Footer = lazy(() => import("../components/Footer.jsx"));
 const ServiceCard = lazy(() => import("../components/ServiceCard.jsx"));
+const TestimonialCardCom = lazy(() => import("../components/TestimonialCardCom.jsx"));
 
 const Home = () => {
 
@@ -47,6 +55,44 @@ const Home = () => {
     img: {ai},
     content: "Discover hidden strengths and ideal career fits with AI-powered analysis."
   }
+
+  // testimonial data
+  const testimonialData = [
+    {
+      name: "Nittin",
+      img: person,
+      college: "IIT Delhi",
+      content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus culpa dolorum eius ut? Id vel odit dolorem, quo aut voluptas beatae nostrum nemo! Veniam similique corrupti dolores nobis magnam iste sequi tempora ex aperiam labore."
+    },
+    {
+      name: "ASH",
+      img: person,
+      college: "IIT Delhi",
+      content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus culpa dolorum eius ut? Id vel odit dolorem, quo aut voluptas beatae nostrum nemo! Veniam similique corrupti dolores nobis magnam iste sequi tempora ex aperiam labore."
+    },
+    {
+      name: "ankitn",
+      img: person,
+      college: "IIT Delhi",
+      content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus culpa dolorum eius ut? Id vel odit dolorem, quo aut voluptas beatae nostrum nemo! Veniam similique corrupti dolores nobis magnam iste sequi tempora ex aperiam labore."
+    },
+  ];
+
+  // setting for react slider
+  const settingsTest = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,      
+    autoplaySpeed: 3000, 
+    arrows: true,        
+    pauseOnHover: true,
+    nextArrow: <TestimonialNextArrows/>,
+    prevArrow: <TestimonialPrevArrows/>,  
+
+  };
 
   return (
     <div className="homeSection">
@@ -111,6 +157,29 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* testimonial section */}
+      <div className="testimonialSection">
+        <div className="container">
+          <h2>Discover What Our Students Speak</h2>
+          <div>
+            <Slider {...settingsTest}>
+            {
+              testimonialData.map((item, index) => (
+                <TestimonialCardCom  
+                  key = {index}
+                  name = {item.name}
+                  img = {item.img}
+                  college = {item.college}
+                  content = {item.content}
+                />
+              ))
+            }
+            </Slider>
+          </div>
+        </div>
+      </div>
+
 
       {/* about section */}
       <div ref={aboutRef} className="aboutSection">
