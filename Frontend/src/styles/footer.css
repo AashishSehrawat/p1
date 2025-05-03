@@ -54,7 +54,7 @@
     width: 200px;
 }
 
-.footerLinkContent > div > img{
+.footerLinkImgContent > a > img{
     width: 100%;
     object-fit: contain;
     object-position: center;

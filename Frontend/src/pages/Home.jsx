@@ -277,11 +277,19 @@ const Home = () => {
                 </p>
                 <div className="contactFollowBlock">
                   <h3>Follow Us</h3>
-                  <h4>"Join our community for career inspiration and updates!"</h4>
+                  <h4>
+                    "Join our community for career inspiration and updates!"
+                  </h4>
                   <div>
-                    <Link><img src={insta} width="45px" alt="Instagram" /></Link>
-                    <Link><img src={linkdin} width="53px" alt="Linkdin" /></Link>
-                    <Link><img src={twitter} width="40px" alt="Twitter" /></Link>
+                    <Link>
+                      <img src={insta} width="45px" alt="Instagram" />
+                    </Link>
+                    <Link>
+                      <img src={linkdin} width="53px" alt="Linkdin" />
+                    </Link>
+                    <Link>
+                      <img src={twitter} width="40px" alt="Twitter" />
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -289,7 +297,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer
+        aboutRef={aboutRef}
+        serviceRef={serviceRef}
+        contactRef={contactRef}
+      />
     </div>
   );
 };

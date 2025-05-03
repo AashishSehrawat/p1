@@ -1,10 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { createScrollFunction, handleHomeClick } from "../utils/scrollFunction";
 
-const Footer = () => {
+const Footer = ({serviceRef, aboutRef, contactRef}) => {
   const today = new Date();
   let currYear = today.getFullYear();
+
+  const location = useLocation();
+
+  const {scrollToService, scrollToAbout, scrollToContact} = createScrollFunction({serviceRef, aboutRef, contactRef})
+
   return (
     <div className="footer">
       <div className="footerContent">
@@ -23,7 +29,9 @@ const Footer = () => {
       <div className="footerLink">
         <div className="footerLinkContent">
           <div className="footerLinkImgContent">
+            <Link to="/" onClick={() => handleHomeClick(location.pathname)}>
             <img src={logo} alt="Logo" />
+            </Link>
           </div>
           <p>
             CareerSathi EdTech Pvt. Ltd. <br />
@@ -46,10 +54,10 @@ const Footer = () => {
           <div className="footerQuickLink">
             <h3>Quick Link</h3>
             <div className="footerAllQuick">
-              <Link className="link" to="/">Home</Link>
-              <Link className="link" to="/">Services</Link>
-              <Link className="link" to="/">About Us</Link>
-              <Link className="link" to="/">Contact Us</Link>
+              <Link className="link" to="/" onClick={() => handleHomeClick(location.pathname)}>Home</Link>
+              <Link className="link" to="#" onClick={scrollToService}>Services</Link>
+              <Link className="link" to="#" onClick={scrollToAbout}>About Us</Link>
+              <Link className="link" to="#" onClick={scrollToContact}>Contact Us</Link>
             </div>
           </div>
           <div className="footerSocialLink">
