@@ -1,0 +1,108 @@
+.footer {
+    padding: 60px 0 0 0;
+    height: 0;
+}
+
+.footerContent {
+    z-index: 999;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 16px;
+    padding: 40px;
+    background-image: url("../assets/footer.webp");
+    background-repeat: no-repeat;
+    background-position-y: -2rem;
+    background-size: cover;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footerContent p {
+    line-height: 1.5;
+}
+
+.footerContent > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 40%;
+}
+
+.footerLink {
+    z-index: -1;
+    background-color: black;
+    color: white;
+    position: relative;
+    top: -145px;
+    padding-top: 200px;
+    padding: 200px 100px 60px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLinkContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footerLinkContent > .footerLinkImgContent {
+    width: 200px;
+}
+
+.footerLinkContent > div > img{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.footerLinkContent > p {
+    line-height: 1.5;
+}
+
+.footerLinkPandE {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+}
+
+.footerLinkPhone, .footerLinkEmail {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.footerDirectLink{
+    display: flex;
+    gap: 5rem;
+}
+
+.footerQuickLink> h3, .footerSocialLink > h3 {
+    padding-bottom: 2rem;
+}
+
+.footerAllQuick, .footerAllSocial{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.link:hover {
+    color: rgb(216, 216, 216);
+}
+
+.footerDataContent {
+    display: flex;
+    align-items: center;
+}
