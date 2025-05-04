@@ -5,13 +5,15 @@ import check from "../assets/check.svg";
 import ai from "../assets/serviceSvg/aiSupport.webp";
 import person from "../assets/testimonial/4.png";
 import aboutUs from "../assets/aboutUs.webp";
-import qr from "../assets/contact/contactQR.jpg";
+import qr from "../assets/contact/contactQR.webp";
 import email from "../assets/contact/email.svg";
 import phone from "../assets/contact/phone.svg";
 import office from "../assets/contact/office.svg";
 import twitter from "../assets/contact/tw.svg";
 import linkdin from "../assets/contact/link.svg";
 import insta from "../assets/contact/insta.svg";
+import yt from "../assets/contact/yt.png"
+import thread from "../assets/contact/thread.png"
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -252,7 +254,7 @@ const Home = () => {
           <div className="contactBlocks">
             <div className="contactImgBlock">
               <img src={qr} alt="Qr code" />
-              <Link to="" className="button">
+              <Link to="https://forms.gle/oqc9tup3SEcjSusYA" className="button">
                 Contact Us
               </Link>
             </div>
@@ -281,14 +283,20 @@ const Home = () => {
                     "Join our community for career inspiration and updates!"
                   </h4>
                   <div>
-                    <Link>
+                    <Link to="https://www.youtube.com/@officialCareerSathi">
+                      <img src={yt} alt="Youtube" width="55px" />
+                    </Link>
+                    <Link to="https://www.instagram.com/officialcareersathi/?hl=en">
                       <img src={insta} width="45px" alt="Instagram" />
                     </Link>
-                    <Link>
+                    <Link to="https://www.linkedin.com/in/career-sathi-75791734b/">
                       <img src={linkdin} width="53px" alt="Linkdin" />
                     </Link>
-                    <Link>
+                    <Link to="https://x.com/Career_Sathi">
                       <img src={twitter} width="40px" alt="Twitter" />
+                    </Link>
+                    <Link to="https://www.threads.net/@officialcareersathi">
+                      <img src={thread} alt="Thread" width="70px" />
                     </Link>
                   </div>
                 </div>

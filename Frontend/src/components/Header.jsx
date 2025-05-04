@@ -31,6 +31,10 @@ const Header = ({ serviceRef, aboutRef, contactRef }) => {
             Contact Us
           </Link>
         </div>
+        <div className="headerLogin">
+          <Link to="/login">Log in</Link>
+          <Link to="/signin">Sign up</Link>
+        </div>
       </div>
     </div>
   );

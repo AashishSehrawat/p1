@@ -63,9 +63,11 @@ const Footer = ({serviceRef, aboutRef, contactRef}) => {
           <div className="footerSocialLink">
             <h3>Social</h3>
             <div className="footerAllSocial">
-              <Link className="link" to="/">Instagram</Link>
-              <Link className="link" to="/">Linkdin</Link>
-              <Link className="link" to="/">Twitter</Link>
+              <Link className="link" to="https://www.instagram.com/officialcareersathi/?hl=en">Instagram</Link>
+              <Link className="link" to="https://www.linkedin.com/in/career-sathi-75791734b/">Linkdin</Link>
+              <Link className="link" to="https://x.com/Career_Sathi">Twitter</Link>
+              <Link className="link" to="https://www.youtube.com/@officialCareerSathi">Youtube</Link>
+              <Link className="link" to="https://www.threads.net/@officialcareersathi">Thread</Link>
             </div>
           </div>
           <div className="footerDataContent">

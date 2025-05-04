@@ -10,6 +10,7 @@ function App() {
       <Suspense>
         <Routes>
           <Route path="/" element={ <Home/> } />
+          {/* <Route path="/register" element={} /> */}
         </Routes>
       </Suspense>
     </Router>
