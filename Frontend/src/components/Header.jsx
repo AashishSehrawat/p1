@@ -33,7 +33,7 @@ const Header = ({ serviceRef, aboutRef, contactRef }) => {
         </div>
         <div className="headerLogin">
           <Link to="/login">Log in</Link>
-          <Link to="/signin">Sign up</Link>
+          <Link to="/signup">Sign up</Link>
         </div>
       </div>
     </div>

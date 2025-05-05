@@ -1,0 +1,76 @@
+/* sign up page */
+.signupPage {
+    position: relative; /* Needed to position the ::after absolutely */
+    height: 100vh;
+    background-image: url("../assets/sign.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    overflow: hidden; /* Optional: to prevent bleed-over */
+}
+
+.signupPage::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.signupPage > * {
+    z-index: 3;
+    position: relative;
+}
+
+.signupPage > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.signupStudent, .signupMentor {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupStudent{
+    margin-left: 150px;
+} 
+
+.signupMentor{
+    margin-right: 150px;
+}
+
+.signupStudentBlock, .signupMentorBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    width: 50%;
+    height: 60%;
+    padding: 40px;
+    border-radius: 24px;
+}
+
+.signupStudentBlock > *, .signupMentorBlock > * {
+    z-index: 999;
+    position: relative;
+    opacity: 10;
+}
+
+
+
+/* sign up student css */
+
+
+
+/* sign up mentor css */
