@@ -5,6 +5,7 @@
 @import "./styles//home.css";
 @import "./styles/components.css";
 @import "./styles/footer.css";
+@import "./styles/login.css";
 
 :root {
   --blueColor: #0094ff;

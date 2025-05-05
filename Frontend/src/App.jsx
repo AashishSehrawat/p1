@@ -1,8 +1,9 @@
 import { lazy, Suspense } from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
-
+const SignUp = lazy(() => import("./pages/SignUp.jsx"));
 const Home = lazy(() => import("./pages/Home.jsx"));
+const Login = lazy(() => import("./pages/Login.jsx"));
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Suspense>
         <Routes>
           <Route path="/" element={ <Home/> } />
-          {/* <Route path="/register" element={} /> */}
+          <Route path="/signup" element={ <SignUp /> } />
+          <Route path="/login" element={ <Login/> } />
         </Routes>
       </Suspense>
     </Router>

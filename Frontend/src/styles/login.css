@@ -1,0 +1,141 @@
+.loginPage {
+    height: 100vh;
+    width: 100%;
+    background-color: #eef3fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginPageSection{
+    height: 80.67vh;
+    width: 70%;
+    background-color: white;
+    border-radius: 24px;
+    display: flex;
+    box-shadow: 0px 0px 10px rgb(221, 221, 221);
+}
+
+.loginContent{
+    padding: 40px 60px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm > h2, .loginForm > p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.loginForm > p {
+    margin-bottom: 20px;
+}
+
+.loginSignUpLink{
+    margin-top: 50px;
+    color: #9e9e9e;
+}
+
+.loginSignUpLink > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.loginEmail{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.loginEmail > input{
+    width: 85%;
+}
+
+.loginEmail > input, .loginPassword > div  > input
+{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #eef3fa;
+    outline: none;
+    color: #9e9e9e;
+}
+
+.loginPassword {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;    
+}
+
+.loginPassword > div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+} 
+
+.loginPassword > div  > input {
+    width: 100%;
+}
+
+.loginPasswordWrapper {
+    position: relative;
+    left: -8%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.loginPasswordWrapper:hover {
+    background-color: #cbcbcd;
+}
+
+.loginImgBlock {
+    width: 55%;
+}
+
+.loginImgBlock > img {
+    object-fit: contain;
+    height: 100%;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.loginButton{
+    width: 94.5%;
+    background-color: var(--blueColor);
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    transition: all .3s;
+}
+
+.loginButton:hover {
+    background-color: black;
+}
+
+
